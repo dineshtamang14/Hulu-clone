@@ -27,7 +27,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
                 </p>
             </div>
         </div>
-    )
-})
+    );
+});
 
 export default Thumbnail;
