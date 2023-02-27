@@ -29,7 +29,7 @@ export default function Home({ results }) {
 export async function getServerSideProps(context){
   const genre = context.query.genre;
 
-  const request = await fetch(
+  const request = await axios.get(
     `https://api.themoviedb.org/3${
     requests[genre]?.url || requests.fetchTrending.url
     }`
@@ -37,7 +37,7 @@ export async function getServerSideProps(context){
 
   return {
     props: {
-      results: request.results,
+      results: request?.results,
     }
   };
 }
