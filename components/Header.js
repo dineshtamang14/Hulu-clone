@@ -25,8 +25,8 @@ function Header() {
             </div>
             </a>
             </Link>
-            <Link href="https://dineshtamang.tech">
-            <a target="_blank" rel="noopener noreferrer">
+            <Link href="/">
+            <a>
             <Image
                 className="object-contain" 
                 src="https://links.papareact.com/ua6"
