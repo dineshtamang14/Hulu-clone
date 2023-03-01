@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import HeaderItem from "./HeaderItem";
 import {
     BadgeCheckIcon,
@@ -12,6 +13,8 @@ import {
 function Header() {
     return (
         <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
+            <Link href="https://dineshtamang.tech">
+            <a target="_blank" rel="noopener noreferrer">
             <div className="flex flex-grow justify-evenly max-w-2xl"> 
                 <HeaderItem title="HOME" Icon={HomeIcon} />
                 <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
@@ -20,6 +23,10 @@ function Header() {
                 <HeaderItem title="SEARCH" Icon={SearchIcon} />
                 <HeaderItem title="ACCOUNT" Icon={UserIcon} />
             </div>
+            </a>
+            </Link>
+            <Link href="https://dineshtamang.tech">
+            <a target="_blank" rel="noopener noreferrer">
             <Image
                 className="object-contain" 
                 src="https://links.papareact.com/ua6"
@@ -27,6 +34,8 @@ function Header() {
                 height={100}
                 alt="logo-img"
             />
+            </a>
+            </Link>
         </header>
     )
 }
